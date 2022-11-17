@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/lilStrangeBackgroundAsset2.png"); 
+    background-size: 16%;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.item-bottom2 img {
+    transform: scaleX(-1);
+}
+
+.hide {
+    opacity: 0;
+}
+
+.gap {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    font-size: 25pt;
+    color: white
+}
+
+p {
+    color: white;
+    font-size: 30pt;
+}
+
+.back {
+    margin: 0px 20px;
+}

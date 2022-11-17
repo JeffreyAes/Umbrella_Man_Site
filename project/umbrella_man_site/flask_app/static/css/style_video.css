@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-image: url("../img/lilStrangeBackgroundAsset2.png"); 
+    background-size: 16%;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.video_align {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+
+
+.overlay {
+    position:absolute;
+    top:65px;
+    left:280px;
+    z-index:1;
+}
+
+
+.hide {
+    opacity: 0;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.links {
+    position: absolute;
+    top: 0px;
+    left: 900px;
+    z-index: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gap {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    font-size: 25pt;
+    color: white
+}
+
+p {
+    color: white;
+    font-size: 30pt;
+}
+
