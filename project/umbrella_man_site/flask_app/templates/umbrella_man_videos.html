@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style_video.css') }}">
     <title>Music Videos</title>
 </head>
+
 <body>
     <div class="header ">
         <div class="hide"><img src="../static/img/logobackbutton.png" width="200px" alt=""></div>
@@ -18,27 +20,19 @@
     </div>
 
     <div class="outer">
-        <div class="bottom-item">
+        <div class="item-bottom">
             <img src="../static/img/panelbettercrop.png" width="1600px" height="800px" alt="">
         </div>
-    
-    <div class="video_align">
 
-        <video  autoplay muted controls height="720" title="Sum of the Above">
-            <source src="../static/img/sotavid.mp4">
-        </video>
-        <div class="overlay">
-            <div class="myDiv">
-                <p id="title">Sum of the Above</p>
-                <div class="links">
-                    <a href="https://www.youtube.com/watch?v=tOpAQTDA4vE">Youtube</a>
-                    <a href="https://open.spotify.com/track/7pfHXHPJm2Lp5bwKTwwUn3?si=29c84f41d7744711">Spotify</a>
-                </div>
-            </div>
+        <div class="video_align item-top">
+            <iframe width="1100" height="619" src="https://www.youtube.com/embed/tOpAQTDA4vE?autoplay=1&mute=1"
+                title="umbrella man - sum of the above (official video)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </div>
-</div>
 
 </body>
 <script src="{{  url_for('static', filename='js/script_video.js') }}"></script>
+
 </html>

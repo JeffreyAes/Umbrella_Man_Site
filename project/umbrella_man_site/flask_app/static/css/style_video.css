@@ -29,13 +29,29 @@ body {
 }
 
 
-.overlay {
-    position:absolute;
-    top:65px;
-    left:280px;
-    z-index:1;
+.outer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position:relative;
 }
 
+.item-bottom {
+
+    grid-column: 1/-1;
+    grid-row: 1;
+
+}
+
+.item-top {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    margin: 80px 170px;
+    z-index: 1;
+}
+
+.item-top iframe {
+    border-radius: 20px;
+}
 
 .hide {
     opacity: 0;
@@ -45,14 +61,6 @@ body {
     text-align: center;
 }
 
-.links {
-    position: absolute;
-    top: 0px;
-    left: 900px;
-    z-index: 1;
-    display: flex;
-    gap: 20px;
-}
 
 .center {
     display: flex;
