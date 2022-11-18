@@ -58,4 +58,4 @@ def dash():
         'id': session['user_id']
     }
     logged_user = User.get_by_id(data)
-    return render_template('welcome.html', logged_user=logged_user)
+    return render_template('umbrella_man_store.html', logged_user=logged_user)
