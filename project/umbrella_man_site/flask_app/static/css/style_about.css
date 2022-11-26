@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace
 }
 
 body {
@@ -22,6 +23,49 @@ body {
 .container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.outer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position:relative;
+}
+
+
+.item-toplogo {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    margin-left: 45px;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+.item-blerb {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    margin: 0px 0px;
+    z-index: 1;
+}
+
+.item-bottom {
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+.item-top {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    margin: 15px 100px;
+    z-index: 1;
+}
+
+.item-top3 {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    margin: 25px 0px 0px 260px;
+    z-index: 2;
 }
 
 
@@ -38,16 +82,26 @@ body {
     gap: 20px;
 }
 
-a {
-    font-size: 25pt;
-    color: white
+a{
+    font-size: 22pt;
+    /* font-weight: 550; */
+    text-shadow: 0px 0px 4px darkblue;
+    color: 492492;
+    text-decoration: none;
 }
 
 p {
-    color: white;
     font-size: 30pt;
+    /* font-weight: 550; */
+    text-shadow: 0px 0px 4px darkblue;
+    color: 492492;
+    text-decoration: none;
 }
 
 .back {
     margin: 0px 20px;
+}
+
+.margin-top {
+    margin-bottom: 80px;
 }
